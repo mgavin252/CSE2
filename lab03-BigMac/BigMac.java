@@ -21,10 +21,11 @@ public class BigMac{
         int dollars;   //whole dollar amount of cost   
         
         cost$ = nBigMacs*bigMac$*(1+taxRate); 
-
+        
+        dollars=(int)(cost$);
         dimes=(int)(cost$*10)%10; //gives us tens spot of decimal
         pennies=(int)(cost$*100)%10; //gives us hundreds spot of decimal
-        System.out.println("The total cost of " +nBigMacs+" BigMacs, at $"+bigMac$ +" per bigMac, with a" + " sales tax of "+ (int)(taxRate*100) + "%, is$" +dollars+ "." +dimes+pennies);
+        System.out.println("The total cost of " +nBigMacs+" BigMacs, at $"+bigMac$ +" per bigMac, with a" + " sales tax of "+ (int)(taxRate*100) + "%, is$" + dollars + "." +dimes+pennies);
 
 
       
